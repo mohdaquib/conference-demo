@@ -8,13 +8,13 @@ import javax.sql.DataSource;
 
 @Configuration
 public class PersistenceConfiguration {
-    @Bean
-    public DataSource dataSource(){
-        DataSourceBuilder builder = DataSourceBuilder.create();
-        builder.url(System.getenv("DB_URL"));
-        builder.username(System.getenv("DB_USERNAME"));
-        builder.password(System.getenv("DB_PASSWORD"));
-        System.out.println("My custom datasource bean has been initialized and set");
-        return builder.build();
-    }
+//    @Bean
+//    public DataSource dataSource(){
+//        DataSourceBuilder builder = DataSourceBuilder.create();
+//        builder.url(System.getenv("DB_URL"));
+//        builder.username(System.getenv("DB_USERNAME"));
+//        builder.password(System.getenv("DB_PASSWORD"));
+//        System.out.println("My custom datasource bean has been initialized and set");
+//        return builder.build();
+//    }
 }
